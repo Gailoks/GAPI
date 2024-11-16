@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GAPI", "GAPI.csproj", "{0552A880-8037-42BA-92DB-FDB98A86CF46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GAPI.Presentation", "GAPI.Presentation\GAPI.Presentation.csproj", "{8E70A678-C632-4DEB-9924-0AA5CEE3D550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAPI.Domain", "GAPI.Domain\GAPI.Domain.csproj", "{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0552A880-8037-42BA-92DB-FDB98A86CF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0552A880-8037-42BA-92DB-FDB98A86CF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0552A880-8037-42BA-92DB-FDB98A86CF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0552A880-8037-42BA-92DB-FDB98A86CF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E70A678-C632-4DEB-9924-0AA5CEE3D550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E70A678-C632-4DEB-9924-0AA5CEE3D550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E70A678-C632-4DEB-9924-0AA5CEE3D550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E70A678-C632-4DEB-9924-0AA5CEE3D550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
