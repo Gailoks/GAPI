@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GAPI.Presentation", "GAPI.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAPI.Domain", "GAPI.Domain\GAPI.Domain.csproj", "{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAPI.DAL", "GAPI.DAL\GAPI.DAL.csproj", "{E98DA2C9-C71C-4A35-A7EF-156A4FA2F6BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E150559-FD77-458F-BB7E-1C5F7D6B21FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98DA2C9-C71C-4A35-A7EF-156A4FA2F6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98DA2C9-C71C-4A35-A7EF-156A4FA2F6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98DA2C9-C71C-4A35-A7EF-156A4FA2F6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98DA2C9-C71C-4A35-A7EF-156A4FA2F6BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

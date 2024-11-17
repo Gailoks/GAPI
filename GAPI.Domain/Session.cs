@@ -1,48 +1,47 @@
-﻿namespace GAPI.Domain
+﻿namespace GAPI.Domain;
+
+public class Session
 {
-	public class Session
+	private readonly List<Message> _messages;
+
+
+	public Session(string? name = null) : this(Guid.NewGuid(), [], name)
 	{
-		private readonly List<Message> _messages;
+		
+	}
+
+	public Session(Guid id, IEnumerable<Message> messages, string? name = null)
+	{
+		Id = id;
+		Name = name;
+		_messages = new List<Message>(messages);
+	}
 
 
-		public Session(string? name = null) : this(Guid.NewGuid(), [], name)
-		{
-			
-		}
+	public IReadOnlyList<Message> Messages => _messages;
 
-		public Session(Guid id, IEnumerable<Message> messages, string? name = null)
-		{
-			Id = id;
-			Name = name;
-			_messages = new List<Message>(messages);
-		}
+	public Guid Id { get; }
+
+	public string? Name { get; private set; }
 
 
-		public IReadOnlyList<Message> Messages => _messages;
+	public void AddMessage(Message message)
+	{
+		_messages.Add(message);
+	}
 
-		public Guid Id { get; }
+	public void RemoveMessage(int position)
+	{
+		_messages.RemoveAt(position);;
+	}
 
-		public string? Name { get; private set; }
+	public void EditMessage(int position, Message newMessage)
+	{
+		_messages[position] = newMessage;
+	}
 
-
-		public void AddMessage(Message message)
-		{
-			_messages.Add(message);
-		}
-
-		public void RemoveMessage(int position)
-		{
-			_messages.RemoveAt(position);;
-		}
-
-		public void EditMessage(int position, Message newMessage)
-		{
-			_messages[position] = newMessage;
-		}
-
-		public void Rename(string? name)
-		{
-			Name = name;
-		}
+	public void Rename(string? name)
+	{
+		Name = name;
 	}
 }

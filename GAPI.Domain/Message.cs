@@ -1,11 +1,11 @@
-﻿namespace GAPI.Domain
-{
-	public enum MessageRole
-	{
-		Model,
-		User,
-		System
-	}
+namespace GAPI.Domain;
 
-	public record Message(MessageRole SenderRole, string Text);
+public enum MessageRole
+{
+	Model,
+	User,
+	System
 }
+
+
+public record Message(MessageRole SenderRole, string Text);

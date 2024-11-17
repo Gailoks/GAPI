@@ -1,9 +1,8 @@
-﻿namespace GAPI.Domain
-{
-	public interface IPasswordService
-    {
-        public byte[] ComputeHash(string password);
+namespace GAPI.Domain;
 
-        public bool Verify(byte[] digest, string password);
-    }
+public interface IPasswordService
+{
+    public byte[] ComputeHash(string password);
+
+    public bool Verify(byte[] digest, string password);
 }
